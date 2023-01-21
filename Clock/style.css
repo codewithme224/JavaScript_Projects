@@ -1,0 +1,60 @@
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 60px;
+  font-family: orbitron;
+  letter-spacing: 7px;
+}
+
+#MyClockDisplay {
+  background-color: aquamarine;
+  padding: 70px;
+  border-radius: 10px;
+  margin-top: 180px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 50px;
+  font-family: orbitron;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 200;
+  line-height: 20px;
+  font-size: 20px;
+  letter-spacing: 20px;
+  font-family: orbitron;
+  color: red;
+}
+
+#icon {
+  font-size: 100px;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  
+  
+  
+}
+
+.icon-container {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 47%;
+  padding: 20px;
+  border-radius: 30px;
+  
+  
+ 
+  
+}

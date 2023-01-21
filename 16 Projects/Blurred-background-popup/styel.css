@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-size: cover;
+  
+}
+
+h1 {
+  font-size: 60px;
+  font-family: impact;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: impact;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #000;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.active.container {
+  filter: blur(5px) brightness(70%);
+}
+
+.popup-container {
+  position: fixed;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  top: 30%;
+  transform: translate(-50%);
+  background: url("https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: all 0.7s;
+
+}
+
+h4 {
+  font-size: 30px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: aqua;
+  text-align: center;
+  margin: 10px 0;
+}
+
+label {
+  color: aqua;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+
+}
+
+.popup-btn {
+  background-color: orangered;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+}
+
+.input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input::placeholder{
+  color: lightgray;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: orangered;
+}
+
+.active.popup-container {
+  visibility: hidden;
+  opacity: 0;
+  top: 10%;
+}

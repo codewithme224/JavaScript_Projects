@@ -1,0 +1,55 @@
+.wrapper {
+  background-color: aqua;
+  margin: 30px;
+  text-align: center;
+  padding: 100px 200px 100px 200px;
+  position: absolute;
+  left: 20%;
+  top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+#seconds, #tens {
+  font-size: 2rem;
+}
+
+#button-start {
+  border: none;
+  padding: 15px 35px;
+  font-size: 20px;
+  background-color: chartreuse;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+#button-stop {
+  border: none;
+  padding: 15px 35px;
+  font-size: 20px;
+  background-color: red;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+#button-reset {
+  border: none;
+  padding: 15px 35px;
+  font-size: 20px;
+  background-color: yellow;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 5px;
+  margin-right: 15px;
+}

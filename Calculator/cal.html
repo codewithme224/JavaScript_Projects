@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .screen {
+      flex: 1 0 100%;
+      background: #eee;
+      border: none;
+      font-size: 2em;
+      text-align: right;
+      padding: 20px;
+    }
+
+    .btn {
+      flex: 1 0 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ccc;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #f0f0f0;
+    }
+
+    .btn-clear {
+      background: #ff4d4d;
+      color: #fff;
+    }
+
+    .btn-clear:hover {
+      background: #ff0000;
+    }
+
+    .btn-equal {
+      background: #009900;
+      color: #fff;
+    }
+
+    .btn-equal:hover {
+      background: #00cc00;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" class="screen" value="" disabled>
+    <button class="btn btn-clear">C</button>
+    <button class="btn" data-num="7">7</button>
+    <button class="btn" data-num="8">8</button>
+    <button class="btn" data-num="9">9</button>
+    <button class="btn" data-num="/">/</button>
+    <button class="btn" data-num="4">4</button>
+    <button class="btn" data-num="5">5</button>
+    <button class="btn" data-num="6">6</button>
+    <button class="btn" data-num="*">*</button>
+    <button class="btn" data-num="1">1</button>
+    <button class="btn" data-num="2">2</button>
+    <button class="btn" data-num="3">3</button>
+    <button class="btn" data-num="-">-</button>
+    <button class="btn" data-num="0">0</button>
+    <button class="btn" data-num=".">.</button>
+    <button class="btn btn-equal">=</button>
+    <button class="btn" data-num="+">+</button>
+  </div>
+  <script>
+    (function() {
+      let screen = document.querySelector('.screen');
+      let buttons = document.querySelectorAll('.btn');
+      let clear = document.querySelector('.btn-clear');
+      let equal = document.querySelector('.btn-equal');
+      // Function that checks the button clicked and adds the value to the screen
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function(e) {
+          let value = e.target.dataset.num;
+          screen.value += value;
+        })
+      });
+
+      // Function that clears the screen
+      clear.addEventListener('click', function() {
+        screen.value = '';
+      });
+
+      // Function that evaluates the expression and displays the result
+      equal.addEventListener('click', function(e) {
+        if (screen.value === '') {
+          screen.value = '';
+        } else {
+          let answer = eval(screen.value); // eval() evaluates the expression
+          console.log(answer);
+          screen.value = answer;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
