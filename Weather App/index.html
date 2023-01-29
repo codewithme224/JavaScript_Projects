@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="inputs">
+    <h1>Weather App</h1>
+    <input type="text" id="city-input" placeholder="Enter any city...">
+    <input type="submit" value="Submit" id="add">
+    <button id="location-btn">Use My Location</button>
+    <div id="unit-switch">
+      <button id="unit-celsius" class="unit-active">°C</button>
+      <button id="unit-fahrenheit">°F</button>
+    </div>
+
+
+
+
+    <!-- <button id="add" >Get Weather</button> -->
+  </section >
+    
+  <section class="display">
+    <div class="wrapper">
+      <h2 id="city-output"></h2>
+      <p id="description"></p>
+      <p id="temp"></p>
+      <p id="feels-like"></p>
+      <p id="humidity"> </p>
+      <p id="pressure"></p>
+      <div id="date-display"></div>
+      <ul id="search-history"></ul>
+      <div id="loading">
+        <p>Loading weather information...</p>
+        <div class="loading">
+          <div class="loading-bar"></div>
+          <div class="loading-bar"></div>
+          <div class="loading-bar"></div>
+          <div class="loading-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <script src="app.js"></script>
+</body>
+</html>
