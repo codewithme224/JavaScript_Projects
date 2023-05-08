@@ -18,7 +18,7 @@
       screen.value = '';
     } else {
       let answer = eval(screen.value); // eval() evaluates the expression
-      console.log(answer);
+      
       screen.value = answer;
     }
   });

@@ -4,7 +4,7 @@ const input = document.querySelector(".input");
 const feedback = document.querySelector(".feedback");
 const resetBtn = document.querySelector(".reset-btn");
 
-console.log("Random Number", randomNumber);
+
 
 // Number of allowed guesses
 const maxGuesses = 5;
